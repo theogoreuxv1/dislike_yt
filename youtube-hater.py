@@ -3,10 +3,10 @@ from time import sleep
 
 with Browser("chrome") as browser:
         browser.visit("https://accounts.google.com/ServiceLogin")
-        browser.fill("identifier", "coucouhelicopter")
+        browser.fill("identifier", "example")
         browser.find_by_id("identifierNext").click()
         sleep(3)
-        browser.fill("password", "jaimelecacao")
+        browser.fill("password", "example")
         browser.find_by_id("passwordNext").click()
         
         sleep(1)
